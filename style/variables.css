@@ -1,0 +1,16 @@
+:root {
+  --font-body: "Raleway", sans-serif;
+  --font-header-title: "Noto Serif", sans-serif;
+  --font-comments: var(--font-header-title);
+  --color-white: #fff;
+  --color-black: #000;
+  --background-gradient: linear-gradient(
+    to bottom,
+    #5f3372,
+    #816497,
+    #a697bb,
+    #d0cade,
+    #ffffff
+  );
+  --comments-box-shadow: 10px 10px 22px -13px rgba(0, 0, 0, 0.75);
+}

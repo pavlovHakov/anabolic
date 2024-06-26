@@ -1,0 +1,31 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url("./reset.css");
+@import url("./promo.css");
+@import url("./variables.css");
+@import url("./composition.css");
+@import url("./carousel.css");
+@import url("./form.css");
+
+.wrapper {
+  max-width: 1210px;
+  height: auto;
+  background-color: var(--color-white);
+  font-family: var(--font-body);
+  color: rgb(84, 84, 84);
+  -webkit-box-shadow: 5px 9px 21px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 9px 21px -5px rgba(0, 0, 0, 0.75);
+  margin: 15px auto 100px;
+  padding-bottom: clamp(2.313rem, 1.968rem + 1.53vw, 3.125rem);
+}
+.polosa {
+  width: 90%;
+  height: 2px;
+  background: #a99797;
+  margin: 0 auto;
+}

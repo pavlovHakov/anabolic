@@ -1,0 +1,198 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.discount__block {
+  max-width: 460px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-box-shadow: var(--comments-box-shadow);
+  box-shadow: var(--comments-box-shadow);
+  margin: auto;
+  border: 1px solid gray;
+}
+.timer__block,
+.price__block {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: clamp(1.313rem, 0.757rem + 2.47vw, 2.625rem);
+  padding-right: clamp(0rem, -0.45rem + 2vw, 1.063rem);
+}
+.price__block {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.price__item,
+.price__item-animate {
+  width: auto;
+  display: inline-block;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.price__item-number {
+  font-size: clamp(1.688rem, 1.238rem + 2vw, 2.75rem);
+  font-family: var(--font-header-title);
+  color: #363535;
+}
+.price__item-text {
+  font-family: var(--font-header-title);
+  font-size: clamp(0.875rem, 0.743rem + 0.59vw, 1.188rem);
+  color: #363535;
+  margin-bottom: 5px;
+}
+.newPrice_color {
+  color: red;
+}
+.price__item-animate {
+  -webkit-transform: translateX(-20%);
+  -ms-transform: translateX(-20%);
+  transform: translateX(-20%);
+  -webkit-transition: all 3s;
+  -o-transition: all 3s;
+  transition: all 3s;
+  opacity: 0;
+}
+.animate-show {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+.line_through {
+  text-decoration: line-through;
+}
+.symbolHTML {
+  color: #d54848;
+  font-size: clamp(1.813rem, 1.627rem + 0.82vw, 2.25rem);
+  height: 15px;
+  font-weight: 700;
+  margin-bottom: clamp(2.188rem, 1.711rem + 2.12vw, 3.313rem);
+}
+.timer__item {
+  width: 30%;
+  text-align: center;
+}
+.timer__item-number {
+  font-family: var(--font-header-title);
+  font-size: clamp(1.688rem, 1.238rem + 2vw, 2.75rem);
+  margin-bottom: 9px;
+  color: #d54848;
+}
+.timer__item-title {
+  font-family: (var(--font-body));
+
+  font-size: 13px;
+  color: #d54848;
+  font-weight: 700;
+  margin-bottom: clamp(1.063rem, 0.798rem + 1.18vw, 1.688rem);
+  text-transform: uppercase;
+}
+
+.timer-title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 300;
+  font-size: clamp(1.313rem, 1.233rem + 0.35vw, 1.5rem);
+  color: #393232;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Forms */
+.form {
+  width: 100%;
+  padding-left: 17px;
+  padding-bottom: 11px;
+  padding-right: 17px;
+}
+.form-label,
+.explanation {
+  display: block;
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 19px;
+  color: #696767;
+  position: relative;
+}
+.explanation {
+  line-height: 22px;
+}
+.input {
+  height: clamp(2.375rem, 2.057rem + 1.41vw, 3.125rem);
+  font-size: clamp(1.125rem, 1.019rem + 0.47vw, 1.375rem);
+}
+.inputName,
+.inputTel {
+  width: 100%;
+  outline: none;
+  border: none;
+  border: 1px solid #a6a4a4;
+  border-radius: 5px;
+  background: #fff;
+  padding: 5px 40px;
+  font-size: 17px;
+  color: #565454;
+  margin-bottom: 15px;
+  margin-top: 7px;
+}
+
+.btn-submit {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  height: 52px;
+  background-color: rgba(255, 49, 86, 1);
+  border: 2px solid #ff3156;
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+  line-height: 46px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.btn-submit:hover {
+  background-color: rgba(255, 49, 86, 0);
+  color: rgba(255, 49, 86, 1);
+  font-weight: 700;
+}
+
+.explanation {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  color: #696767;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#errorName,
+#errorTel {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: red;
+  font-size: 15px;
+}

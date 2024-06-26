@@ -1,0 +1,115 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.slider {
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.slider .item {
+  background-image: var(--background-gradient);
+  padding-bottom: 15px;
+}
+
+.slider .previous,
+.slider .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  -webkit-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.slider .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.slider .previous:hover,
+.slider .next:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.slider .item {
+  -webkit-animation-name: fade;
+  animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+.item-img-block {
+  width: 312px;
+  height: auto;
+  margin: 0 auto;
+}
+.item-ul {
+  width: 70%;
+  height: 178px;
+  overflow: hidden;
+}
+.item-img-block img {
+  width: 100%;
+  height: 100%;
+}
+.slider-text {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background: #fff;
+  color: #5f3372;
+  border-radius: 10px;
+  -webkit-box-shadow: var(--comments-box-shadow);
+  box-shadow: var(--comments-box-shadow);
+}
+.slider-cnp {
+  width: 142px;
+  font-size: 18px;
+  padding: 10px;
+  background: #5f3372;
+  border: 1px solid #5f3372;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #e1a60f;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.slider-cnp:hover {
+  background: #e1a60f;
+  color: #5f3372;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 649px) {
+  .item-ul {
+    width: 100%;
+  }
+}

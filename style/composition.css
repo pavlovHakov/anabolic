@@ -1,0 +1,112 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.composition__block {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: clamp(0.688rem, 0.449rem + 1.06vw, 1.25rem);
+  margin-bottom: clamp(0.688rem, -0.186rem + 3.88vw, 2.75rem);
+}
+.composition__item {
+  width: 30%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.composition__item-card {
+  width: 100%;
+  height: 147px;
+  background: var(--background-gradient);
+  margin-bottom: 19px;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: var(--comments-box-shadow);
+  box-shadow: var(--comments-box-shadow);
+}
+.composition__block-flex {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.composition__item-img-bg {
+  width: auto;
+  max-height: 307px;
+  margin: auto;
+}
+.composition__item-img {
+  width: 74px;
+  margin-right: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.composition__item-img-bg img,
+.composition__item-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.composition-text {
+  color: var(--color-white);
+}
+.cnp-composition {
+  width: 100%;
+  height: 36px;
+  font-size: 18px;
+  line-height: 32px;
+  background: #5f3372;
+  border: 1px solid #5f3372;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #e1a60f;
+  cursor: pointer;
+}
+.cnp-composition:hover {
+  background: #e1a60f;
+  color: #5f3372;
+}
+
+@media (max-width: 754px) {
+  .composition__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .composition__item-img-bg {
+    display: none;
+  }
+  .composition__item {
+    width: 100%;
+    padding-left: clamp(0.438rem, -4.873rem + 23.6vw, 6.25rem);
+    padding-right: clamp(0.438rem, -4.873rem + 23.6vw, 6.25rem);
+  }
+  .composition__item-card {
+    margin-bottom: clamp(0.188rem, -0.726rem + 4.06vw, 1.188rem);
+  }
+}
